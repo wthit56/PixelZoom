@@ -1,4 +1,4 @@
-# PixelZoom
+# PixelZoom(source, factor)
 
 So everyone who's working on 8-bit style games for the web is well aware of the scaling 
 problem. Scale an image, get blurry, fuzzy awfulness. While there are rays of hope potentially 
