@@ -39,5 +39,5 @@ var ZoomExample = (function () {
 	return ZoomExample;
 })();
 
-ZoomExample("finn_and_jake_pixel_art_by_iru_mizu-d52xa9n.gif");
-ZoomExample("Thank_You_for_1000_Watchers_by_ValaSedai-d4p02io.gif");
+ZoomExample("samples/finn_and_jake_pixel_art_by_iru_mizu-d52xa9n.gif");
+ZoomExample("samples/Thank_You_for_1000_Watchers_by_ValaSedai-d4p02io.gif");
