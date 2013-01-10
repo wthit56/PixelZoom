@@ -5,45 +5,9 @@
         <meta charset="utf-8" />
         <title></title>
     </head>
+	<em>open your browser's console to see rendering stats</em><hr />
     <body>
 		<script src=".js" type="text/javascript"></script>
-		<script type="text/javascript">
-  	var sample = document.getElementById("sample");
-  	var factor = 4;
-
-  	var ZoomExample = (function () {
-  		function ZoomExample(src) {
-  			var sample = new Image();
-  			sample.onload = sample_load;
-  			sample.container = document.body.appendChild(document.createElement("DIV"));
-
-  			sample.src = src;
-  			return sample.container;
-  		};
-
-  		function sample_load() {
-  			this.container.appendChild(this);
-
-  			var start = new Date(), ms;
-  			this.container.appendChild(PixelZoom(this, factor));
-  			console.log(
-  	            "PixelZoom " + this.src + " (" + this.width + "x" + this.height + "): " +
-  	            (ms = (new Date() - start)) + "ms; " +
-  	            (ms / (this.width * this.height)) + "ms per pixel"
-  	        );
-
-  			var stretched = this.cloneNode();
-  			stretched.width = this.width * factor;
-  			stretched.width = this.height * factor;
-
-  			this.container.appendChild(stretched);
-  		}
-
-  		return ZoomExample;
-  	})();
-
-  	ZoomExample("finn_and_jake_pixel_art_by_iru_mizu-d52xa9n.gif");
-  	ZoomExample("Thank_You_for_1000_Watchers_by_ValaSedai-d4p02io.gif");
-		</script>
+		<script src="test.js" type="text/javascript"></script>
     </body>
 </html>
